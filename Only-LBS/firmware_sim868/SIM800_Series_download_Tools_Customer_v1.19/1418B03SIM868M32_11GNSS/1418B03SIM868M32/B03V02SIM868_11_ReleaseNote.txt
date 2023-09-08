@@ -1,0 +1,110 @@
+    B03V02SIM868_11.bin Release Note                                            
+
+Release Notes:
+  1.Related to B03V02SIM868_11.bin
+  2.Product Name: B03V02SIM868_11
+    Main Version ID       :B03
+    Sub  Version ID       :V02
+    Model name            :SIM868
+    Baud Rate Abbreviation:1
+    -------------------------------
+    |Abbreviation   |   Baud Rate |
+    -------------------------------
+    |9              |   9600      |
+    |1              |   115200    |
+    -------------------------------
+  3.RF Chip: GPS+GLONASS
+  4.EASY: default open
+  5.PSIM: supported
+
+
+More details about this product as follows:
+Item                                     Default setting            unit        
+-------------------------------------    -----------------------    ------------
+-------------------------------------    -----------------------    ------------
+Flash Allow Change of Factory Default    Disable                                
+--------------------                     ------------               --------    
+UART baudrate                            115200                     bps         
+--------------------                     ------------               --------    
+Allow Change of UART Baudrate            Enable                                 
+--------------------                     ------------               --------    
+Fix update rate                          1000                       ms          
+--------------------                     ------------               --------    
+NMEA Sentence Output                                                            
+    -->GLL                               Disable                                
+    -->RMC                               Enable                                 
+    -->VTG                               Enable                                 
+    -->GGA                               Enable                                 
+    -->GSV                               Enable                                 
+    -->GSA                               Enable                                 
+    -->ZDA                               Disable                                
+--------------------                     ------------               --------    
+Optimize TTFF                            Enable                                 
+--------------------                     ------------               --------    
+Satellite Elevation Mask                 5                          degree      
+--------------------                     ------------               --------    
+Nav Speed Threshold                      0.4                        m/s         
+--------------------                     ------------               --------    
+Datum                                    WGS84                                  
+--------------------                     ------------               --------    
+Initial Position Latitude                90                         degree      
+--------------------                     ------------               --------    
+Initial Position Longitude               0                          degree      
+--------------------                     ------------               --------    
+Product model                            B03V02SIM868_11                        
+--------------------                     ------------               --------    
+Build ID                                 0x0000                                 
+--------------------                     ------------               --------    
+Firmware Write Protection                Disable                                
+--------------------                     ------------               --------    
+DGPS mode                                SBAS                                   
+--------------------                     ------------               --------    
+SBAS Search                              Enable                                 
+--------------------                     ------------               --------    
+AIC(Active Interference Cancellation)    Enable                                 
+--------------------                     ------------               --------    
+Internal LNA Gain                        High                                   
+--------------------                     ------------               --------    
+TCXO Freq Error                          0.5                        ppm         
+--------------------                     ------------               --------    
+1PPS Output                              Enable                                 
+--------------------                     ------------               --------    
+1PPS Output pin                          Default mode                           
+--------------------                     ------------               --------    
+1PPS Logic Duration                      100                        ms          
+--------------------                     ------------               --------    
+1PPS Availability                        Enable                     3D fix only 
+--------------------                     ------------               --------    
+LOCUS Default setting                    Disable                                
+--------------------                     ------------               --------    
+LOCUS logging type                       Overlap                                
+--------------------                     ------------               --------    
+Logging Content                          Racing                                 
+--------------------                     ------------               --------    
+LOCUS HW IF                              Internal Flash                         
+--------------------                     ------------               --------    
+Logging Area Data Size                   128                        KB          
+--------------------                     ------------               --------    
+Logging Mode                                                                    
+    -->AL                                Enable                                 
+    -->Fix only                          Enable                                 
+    -->Normal                            Disable                                
+    -->Interval                          Enable                     15 sec      
+    -->Distance                          Disable                                
+    -->Speed                             Disable                                
+--------------------                     ------------               --------    
+GPIO                                                                            
+    -->Fix-LED                           GPIO 6                                 
+--------------------                     ------------               --------    
+Standby PIN                              GPIO 12                                
+
+*Note: If Aiding in flash enabled, fix update rate be fixed @ 1Hz.
+
+
+PSIM details, see the table below(Y means supported, N means unsupported):
+PSIMFIX	PSIMLST	PSIMONE	PSIMGEO	PSIMSPD	PSIMDBG	PSIMMOD PSIMODO
+Y	Y	Y	Y	Y	Y	Y       Y
+PSIMIPR	PSIMSN	PSIMINI	PSIMPPS	PSIMIO	PSIMANT	PSIMNAV PSIMECEF
+Y	Y	Y	Y	N	N	Y       Y
+PSIMNMEA	PSIMJAM
+Y		Y
